@@ -1,8 +1,4 @@
-# React + Vite
+# 2023 F2E 競選官網
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**採用 [設計師-PinChen Wu](pinchen.wu@gmail.com)之[設計稿](https://www.figma.com/file/3jLMmrhDl3UkjTKbU5YCye/2023-F2E-%E7%AB%8B%E5%A7%94%E7%AB%B6%E9%81%B8%E5%AE%98%E7%B6%B2?type=design&node-id=6-42&mode=design)**
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
