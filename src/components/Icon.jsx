@@ -4,9 +4,7 @@ import { ReactSVG } from "react-svg";
 function Icon({content}) {
   return (
     <>
-      <span className="icon">
-        <ReactSVG src={`./icons/${content}.svg`} />
-      </span>
+      <ReactSVG className="icon" src={`./icons/${content}.svg`} />
     </>
   )
 }
