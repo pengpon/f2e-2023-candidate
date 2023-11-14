@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
 import { ReactSVG } from "react-svg";
 
-export default function Icon({content}) {
+function Icon({content}) {
   return (
     <>
       <span className="icon">
@@ -9,3 +10,9 @@ export default function Icon({content}) {
     </>
   )
 }
+
+Icon.propTypes = {
+  content: PropTypes.string,
+};
+
+export default Icon;
