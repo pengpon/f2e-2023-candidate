@@ -1,0 +1,55 @@
+.text-link {
+  display: flex;
+  align-items: center;
+
+  .icon:first-child {
+    margin-right: map-get($spacers, 1);
+  }
+
+  // default color
+  color: map-get($gray, "gray-5");
+
+  &:hover {
+    color: map-get($primary, "lime-5");
+
+    .icon path {
+      stroke: map-get($primary, "lime-5");
+    }
+
+    .icon path.fill {
+      fill: map-get($primary, "lime-5");
+    }
+  }
+
+  &.is-dark {
+    color: map-get($gray, "gray-0");
+
+    &:hover {
+      color: map-get($primary, "lime-2");
+
+      .icon path {
+        stroke: map-get($primary, "lime-2");
+      }
+
+      .icon path#Vector_3-60 {
+        fill: map-get($primary, "lime-2");
+      }
+    }
+  }
+
+  &.is-light {
+    color: map-get($gray, "gray-5");
+
+    &:hover {
+      color: map-get($primary, "lime-5");
+
+      .icon path {
+        stroke: map-get($primary, "lime-5");
+      }
+
+      .icon path#Vector_3-60 {
+        fill: map-get($primary, "lime-5");
+      }
+    }
+  }
+}
