@@ -11,7 +11,6 @@
   font-size: map-get($display-font-sizes, 5);
   font-weight: $font-weight-medium;
   line-height: $line-height-lg;
-  background-color: red;
 
   @include media-breakpoint-up(lg) {
     max-width: 90vw;
