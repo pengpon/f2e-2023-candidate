@@ -1,0 +1,96 @@
+.tabs {
+  text-align: center;
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  .tabs-view {
+    position: absolute;
+    opacity: 0;
+  }
+
+  // FIXME: 要由 tab 數量決定
+  &:has(#tab1:checked) .tabs-views #tabs-view-1,
+  &:has(#tab2:checked) .tabs-views #tabs-view-2,
+  &:has(#tab3:checked) .tabs-views #tabs-view-3 {
+    position: relative;
+    top: 0;
+    opacity: 1;
+  }
+
+  label.tab:has(input[type="radio"]:checked) {
+    background-color: map-get($primary, "lime-1");
+  }
+
+  label.tab {
+    display: inline-block;
+    // FIXME: 寬度要由 tab 數量決定
+    width: calc(100% / 3);
+    padding-top: map-get($spacers, 3);
+    padding-bottom: map-get($spacers, 3);
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    font-size: map-get($display-font-sizes, 4);
+    font-weight: $font-weight-medium;
+    line-height: $line-height-base;
+    background-color: map-get($primary, "lime-4");
+    cursor: pointer;
+  }
+
+  // tabs-views
+  .tabs-views {
+    padding: map-get($spacers, 4) map-get($spacers, 3);
+    background-color: map-get($primary, "lime-1");
+  }
+
+  .view-desc {
+    margin-bottom: map-get($spacers, 5);
+    font-size: map-get($display-font-sizes, 2);
+    font-weight: $font-weight-bold;
+    line-height: $line-height-base;
+    color: map-get($primary, "lime-5");
+  }
+
+  .item {
+    margin-bottom: map-get($spacers, 4);
+    padding-right: map-get($spacers, 4);
+    padding-left: map-get($spacers, 4);
+    text-align: center;
+    background-image: url("./background.svg");
+    background-repeat: no-repeat;
+    background-size: 240px 110px;
+    background-position: center;
+
+    &-image {
+      width: 128px;
+    }
+
+    &-title {
+      font-size: map-get($display-font-sizes, 2);
+      font-weight: $font-weight-bold;
+      line-height: $line-height-base;
+    }
+
+    &-desc {
+      font-size: map-get($display-font-sizes, 5);
+      font-weight: $font-weight-medium;
+      line-height: $line-height-lg;
+    }
+
+    &-image,
+    &-title {
+      margin-bottom: map-get($spacers, 2);
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .tabs-views ul {
+      display: flex;
+    }
+
+    .item {
+      margin-bottom: 0;
+    }
+  }
+}
