@@ -1,4 +1,5 @@
 import Header from '../components/layout/Header'
+import Kv from '../components/layout/Kv'
 import Issues  from '../components/layout/Issues'
 import Service  from '../components/layout/Service'
 import Donations  from '../components/layout/Donations'
@@ -9,6 +10,7 @@ export default function Home () {
   return (
     <>
     <Header/>
+    <Kv/>
     <div className='container'>
       <Claims
         title={["候選主張", "Candidate Claims"]}
