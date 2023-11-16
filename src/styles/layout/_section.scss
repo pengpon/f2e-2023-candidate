@@ -1,16 +1,33 @@
 .section {
   .title {
+    margin-bottom: map-get($spacers, 4);
     font-size: map-get($display-font-sizes, 1);
     font-weight: $font-weight-bold;
     line-height: $line-height-base;
     color: map-get($primary, "lime-5");
-    margin-bottom: map-get($spacers, 2);
+
+    .title-en {
+      display: block;
+      margin-bottom: map-get($spacers, 2);
+      font-size: map-get($display-font-sizes, 4);
+      font-weight: $font-weight-medium;
+      line-height: $line-height-base;
+      color: map-get($primary, "lime-5");
+    }
   }
 
   .subtitle {
-    font-size: map-get($display-font-sizes, 4);
-    font-weight: $font-weight-medium;
+    margin-bottom: map-get($spacers, 3);
+    font-size: map-get($display-font-sizes, 2);
+    font-weight: $font-weight-bold;
     line-height: $line-height-base;
-    color: map-get($primary, "lime-5");
+    color: map-get($gray, "gray-5");
+  }
+
+  .description {
+    font-size: map-get($display-font-sizes, 5);
+    font-weight: $font-weight-normal;
+    line-height: $line-height-lg;
+    color: map-get($gray, "gray-4");
   }
 }
