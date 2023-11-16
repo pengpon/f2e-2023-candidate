@@ -1,6 +1,7 @@
 import Header from '../components/layout/Header'
 import Issues  from '../components/layout/Issues'
 import Service  from '../components/layout/Service'
+import Donations  from '../components/layout/Donations'
 import Events  from '../components/layout/Events'
 
 export default function Home () {
@@ -10,6 +11,10 @@ export default function Home () {
     <div className='container'>
       <Issues
         title={["政策議題", "Policy Issues"]}
+      />
+      <Donations
+        title={["小額捐款", "Small Donations"]}
+        subtitle="您的每筆捐款，是每隻毛孩未來的大大動力！"
       />
       <Events
         title={["最新活動", "Latest Events"]}

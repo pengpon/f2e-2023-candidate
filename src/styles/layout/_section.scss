@@ -61,6 +61,56 @@
     }
   }
 
+  &.donations {
+    .subtitle {
+      word-break: keep-all;
+    }
+
+    .donations-total {
+      padding: map-get($spacers, 3);
+      width: 100%;
+      display: inline-block;
+      border-radius: $border-radius;
+      font-size: map-get($display-font-sizes, 4);
+      font-weight: $font-weight-medium;
+      line-height: $line-height-base;
+      color: map-get($primary, "lime-3");
+      background-color: map-get($gray, "gray-5");
+      margin-bottom: map-get($spacers, 4);
+
+      .donations-total-count {
+        margin-top: map-get($spacers, 1);
+        display: block;
+        font-size: map-get($display-font-sizes, 1);
+        font-weight: $font-weight-bold;
+        line-height: $line-height-base;
+      }
+      @include media-breakpoint-up(lg) {
+        padding: map-get($spacers, 3) map-get($spacers, 4);
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      gap: map-get($spacers, 4);
+
+      .donations-context {
+        position: relative;
+        width: calc(100% / 12 * 5);
+      }
+
+      .donations-donation {
+        width: calc(100% / 12 * 7);
+      }
+
+      .donations-total {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+
   &.events {
     @include media-breakpoint-up(lg) {
       display: flex;
