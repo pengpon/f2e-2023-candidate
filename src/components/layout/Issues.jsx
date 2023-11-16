@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import Tabs from '../Tabs'
 
-function Issues({title, subtitle}) {
+function Issues({title}) {
   const list = [
     {
       id: "1",
