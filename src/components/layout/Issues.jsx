@@ -74,8 +74,10 @@ function Issues({title, subtitle}) {
   return (
     <>
     <section className="section">
-      <h2 className="title">{title}</h2>
-      <h3 className="subtitle">{subtitle}</h3>
+      <h2 className="title">{title[0]}
+        <span className="title-en">{title[1]}
+        </span>
+      </h2>
       <Tabs list={list}/>
     </section>
     </>
@@ -83,8 +85,7 @@ function Issues({title, subtitle}) {
 }
 
 Issues.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
+  title: PropTypes.array,
 };
 
 export default Issues;
