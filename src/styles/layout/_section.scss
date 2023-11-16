@@ -1,4 +1,6 @@
 .section {
+  margin-bottom: map-get($spacers, 4);
+
   .title {
     margin-bottom: map-get($spacers, 4);
     font-size: map-get($display-font-sizes, 1);
@@ -31,6 +33,32 @@
     color: map-get($gray, "gray-4");
   }
 
+  @include media-breakpoint-up(lg) {
+    margin-bottom: map-get($spacers, 6);
+  }
+
+  // customize section style
+  &.claims {
+    .context {
+      font-size: map-get($display-font-sizes, 5);
+      font-weight: $font-weight-medium;
+      line-height: $line-height-lg;
+      color: map-get($gray, "gray-4");
+      &:not(:last-child) {
+        margin-bottom: map-get($spacers, 3);
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      .title {
+        width: calc(100% / 12 * 3);
+      }
+      .context-wrapper {
+        width: calc(100% / 12 * 9);
+      }
+    }
+  }
   &.service {
     .service-img {
       display: none;
