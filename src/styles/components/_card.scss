@@ -1,0 +1,55 @@
+.card {
+  margin-bottom: map-get($spacers, 4);
+  &-image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 13px;
+    border: 2px solid map-get($primary, "lime-2");
+    border-radius: $border-radius;
+    box-shadow: 13px 13px map-get($primary, "lime-2");
+  }
+
+  &-title {
+    font-size: map-get($display-font-sizes, 2);
+    font-weight: $font-weight-bold;
+    line-height: $line-height-base;
+    color: map-get($primary, "lime-5");
+  }
+
+  &-description {
+    font-size: map-get($display-font-sizes, 5);
+    font-weight: $font-weight-medium;
+    line-height: $line-height-lg;
+    color: map-get($gray, "gray-4");
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .btn {
+      width: auto;
+    }
+  }
+
+  &-date {
+    font-size: map-get($display-font-sizes, 5);
+    font-weight: $font-weight-medium;
+    line-height: $line-height-lg;
+    color: map-get($primary, "lime-5");
+  }
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    gap: map-get($spacers, 3);
+
+    &-image {
+      width: calc(100% / 9 * 3);
+      margin-right: 13px;
+    }
+
+    &-content {
+      width: calc(100% / 9 * 6);
+    }
+  }
+}
