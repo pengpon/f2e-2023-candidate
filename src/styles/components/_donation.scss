@@ -1,0 +1,99 @@
+.donation {
+  padding: map-get($spacers, 3) map-get($spacers, 4);
+  border: 2px solid map-get($primary, "lime-5");
+  border-radius: $border-radius;
+  background-color: map-get($gray, "gray-0");
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-bottom: map-get($spacers, 3);
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  &-title {
+    display: flex;
+    align-items: center;
+    color: map-get($gray, "gray-5");
+    font-size: map-get($display-font-sizes, 2);
+    font-weight: $font-weight-bold;
+    line-height: $line-height-base;
+    margin-bottom: map-get($spacers, 3);
+  }
+
+  &-divider {
+    display: inline-block;
+    width: 3px;
+    height: 28px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: map-get($gray, "gray-5");
+  }
+
+  &-price::before {
+    content: "NT$";
+    color: map-get($gray, "gray-3");
+    font-size: map-get($display-font-sizes, 5);
+    font-weight: $font-weight-medium;
+    line-height: $line-height-lg;
+    margin-right: 8px;
+  }
+
+  &:hover,
+  &:has(input:checked) {
+    background-color: map-get($gray, "gray-5");
+
+    .donation-title {
+      color: map-get($primary, "lime-3");
+    }
+
+    .donation-divider {
+      background-color: map-get($primary, "lime-3");
+    }
+
+    .donation-price::before {
+      color: map-get($primary, "lime-1");
+    }
+
+    .donation-img svg path {
+      stroke: map-get($gray, "gray-0");
+    }
+  }
+
+  &-sponsor {
+    display: inline-block;
+    padding: map-get($spacers, 2) map-get($spacers, 3);
+    border-radius: $border-radius-sm;
+    font-size: map-get($display-font-sizes, 5);
+    font-weight: $font-weight-medium;
+    line-height: $line-height-lg;
+    color: map-get($gray, "gray-5");
+    background-color: map-get($primary, "lime-2");
+  }
+
+  &-img {
+    display: none;
+
+    svg path {
+      stroke: map-get($gray, "gray-2");
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .donation-img {
+        display: block;
+      }
+    }
+  }
+}
