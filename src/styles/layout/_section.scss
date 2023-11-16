@@ -60,4 +60,17 @@
       }
     }
   }
+
+  &.events {
+    @include media-breakpoint-up(lg) {
+      display: flex;
+
+      .events-title {
+        width: calc(100% / 12 * 3);
+      }
+      .events-cards {
+        width: calc(100% / 12 * 9);
+      }
+    }
+  }
 }

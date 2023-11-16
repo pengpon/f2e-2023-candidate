@@ -1,6 +1,7 @@
 import Header from '../components/layout/Header'
 import Issues  from '../components/layout/Issues'
 import Service  from '../components/layout/Service'
+import Events  from '../components/layout/Events'
 
 export default function Home () {
   return (
@@ -9,6 +10,9 @@ export default function Home () {
     <div className='container'>
       <Issues
         title={["政策議題", "Policy Issues"]}
+      />
+      <Events
+        title={["最新活動", "Latest Events"]}
       />
       <Service
         title={["服務信箱", "Service Mail"]}
