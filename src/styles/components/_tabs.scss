@@ -8,6 +8,7 @@
   .tabs-view {
     position: absolute;
     opacity: 0;
+    z-index: -1;
   }
 
   // FIXME: 要由 tab 數量決定
@@ -17,6 +18,7 @@
     position: relative;
     top: 0;
     opacity: 1;
+    z-index: 1;
   }
 
   label.tab:has(input[type="radio"]:checked) {
