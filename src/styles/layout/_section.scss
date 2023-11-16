@@ -30,4 +30,34 @@
     line-height: $line-height-lg;
     color: map-get($gray, "gray-4");
   }
+
+  &.service {
+    .service-img {
+      display: none;
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+
+      .service-context {
+        width: calc(100% / 12 * 5);
+        position: relative;
+      }
+
+      .service-form {
+        flex-grow: 1;
+        z-index: 2;
+      }
+
+      .service-img {
+        display: block;
+        width: calc(100% / 5 * 3);
+        position: absolute;
+        right: calc(100% / -5);
+        margin-right: map-get($spacers, 4);
+        z-index: 1;
+        bottom: 0;
+      }
+    }
+  }
 }
