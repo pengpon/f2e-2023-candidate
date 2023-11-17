@@ -1,1 +1,119 @@
 // Footer
+.footer {
+  padding: map-get($spacers, 4) map-get($spacers, 3);
+  color: map-get($gray, "gray-0");
+  background-color: map-get($gray, "gray-5");
+
+  .footer-logo img {
+    width: auto;
+    max-width: 160px;
+  }
+
+  .footer-logo,
+  .footer-social {
+    margin-bottom: map-get($spacers, 3);
+  }
+
+  .footer-link,
+  .footer-contact {
+    margin-bottom: map-get($spacers, 4);
+  }
+
+  .footer-subtitle {
+    margin-bottom: map-get($spacers, 2);
+  }
+
+  .footer-link,
+  .footer-contact {
+    font-size: map-get($display-font-sizes, 5);
+    font-weight: $font-weight-medium;
+    line-height: 24px;
+  }
+  .footer-copyright {
+    font-size: 14px;
+    font-weight: $font-weight-normal;
+    line-height: $line-height-lg;
+    text-align: center;
+  }
+
+  .footer-social .menu-item,
+  .footer-link .link-item {
+    display: inline-block;
+  }
+
+  .footer-social .menu-item:not(:last-child),
+  .footer-link .link-item:not(:last-child) {
+    margin-right: map-get($spacers, 3);
+  }
+
+  .footer-contact svg * {
+    stroke: map-get($primary, "lime-3");
+  }
+
+  .footer-social svg * {
+    stroke: map-get($gray, "gray-0");
+  }
+
+  .footer-social .icon:hover svg * {
+    stroke: map-get($primary, "lime-2");
+  }
+
+  .footer-subtitle {
+    color: map-get($primary, "lime-3");
+  }
+
+  .footer-contact .contact-item:not(:last-child) {
+    margin-bottom: map-get($spacers, 1);
+  }
+
+  .text-link {
+    color: map-get($gray, "gray-0");
+  }
+
+  .text-link:hover {
+    color: map-get($primary, "lime-2");
+  }
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-height: 280px;
+    padding: map-get($spacers, 4) map-get($spacers, 6);
+
+    .footer-logo {
+      width: calc(100% / 12 * 2);
+    }
+
+    .footer-logo img {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .footer-content {
+      display: flex;
+      gap: map-get($spacers, 4);
+    }
+
+    .footer-social {
+      display: none;
+    }
+
+    .footer-link .link-item {
+      display: block;
+    }
+
+    .footer-subtitle {
+      margin-bottom: map-get($spacers, 3);
+    }
+
+    .footer-link .link-item:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: map-get($spacers, 1);
+    }
+
+    .footer-copyright {
+      width: 100%;
+    }
+  }
+}
