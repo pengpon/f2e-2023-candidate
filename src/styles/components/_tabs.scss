@@ -38,6 +38,10 @@
     line-height: $line-height-base;
     background-color: map-get($primary, "lime-4");
     cursor: pointer;
+
+    &:hover {
+      background-color: map-get($primary, "lime-3");
+    }
   }
 
   // tabs-views

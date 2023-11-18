@@ -12,6 +12,7 @@
   color: map.get($gray, "gray-5");
   background-color: map.get($primary, "lime-3");
   cursor: pointer;
+  transition: 0.5s;
 
   &.is-large {
     padding: map.get($spacers, 3) map.get($spacers, 4);
@@ -28,6 +29,7 @@
 
   &:hover {
     background-color: map.get($primary, "lime-4");
+    transition: 0.5s;
   }
 
   > .icon:first-child {
