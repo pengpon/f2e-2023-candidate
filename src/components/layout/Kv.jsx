@@ -14,7 +14,10 @@ export default function Kv() {
           </Button>
         </div>
         <div className="kv-slogan">
-        喵喵權益我帶頭
+          <div className="slogan-title">
+            <span>喵喵權益</span>
+            <span>我帶頭</span>
+          </div>
           <span className='slogan-text'>
             <Icon content="vote"/>
             立委請支持
