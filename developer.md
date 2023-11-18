@@ -50,4 +50,7 @@ class name 參考 [Bulma](https://bulma.io/)
 日期 | 內容 |
 --- | --- |
 11/13 | 建置專案雛形結構、GitHub Actions 設定
-11/14 | Header、Tabs
+11/14 | Header、Tabs / Section：Issues
+11/16 | 元件：Forms、Card / Section：KV、Claims、Events、Donations、Service
+11/17 | Footer
+11/18 | Anchor、 AOS 進場
