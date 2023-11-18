@@ -1,6 +1,7 @@
 // Footer
 .footer {
-  padding: map-get($spacers, 4) map-get($spacers, 3);
+  padding-top: map-get($spacers, 4);
+  padding-bottom: map-get($spacers, 4);
   color: map-get($gray, "gray-0");
   background-color: map-get($gray, "gray-5");
 
@@ -75,12 +76,15 @@
   }
 
   @include media-breakpoint-up(md) {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     max-height: 280px;
-    padding: map-get($spacers, 4) map-get($spacers, 6);
+    padding-top: map-get($spacers, 4);
+    padding-bottom: map-get($spacers, 4);
 
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
     .footer-logo {
       width: calc(100% / 12 * 2);
     }
