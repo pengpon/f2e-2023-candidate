@@ -6,8 +6,6 @@ function TextLink({theme, href, children}) {
       <a
         href={href}
         className={`text-link is-${theme}`}
-        target="_blank"
-        rel="noreferrer"
       >{children}</a>
     </>
   )
@@ -16,7 +14,7 @@ function TextLink({theme, href, children}) {
 TextLink.propTypes = {
   children: PropTypes.node,
   href: PropTypes.string,
-  theme: PropTypes.string
+  theme: PropTypes.string,
 };
 
 export default TextLink;

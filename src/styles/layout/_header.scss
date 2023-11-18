@@ -32,6 +32,10 @@
     background-size: contain;
   }
 
+  .text-link:hover svg * {
+    stroke: map-get($gray, "gray-5");
+  }
+
   // Mobile
   #navbar-check,
   .overlay {

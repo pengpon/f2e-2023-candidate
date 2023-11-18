@@ -5,8 +5,8 @@ import KvImage from '../../assets/kv.png'
 export default function Kv() {
   return(
     <>
-      <div className='section kv'>
-        <div className="kv-media">
+      <div className="section kv" data-aos="fade-right" data-aos-duration="1000">
+        <div className="kv-media" >
           <img src={KvImage} alt="key-vision" className="kv-img" />
           <Button type="small" className="kv-btn">
             <span>候選人簡介</span>
@@ -18,7 +18,7 @@ export default function Kv() {
             <span>喵喵權益</span>
             <span>我帶頭</span>
           </div>
-          <span className='slogan-text'>
+          <span className="slogan-text">
             <Icon content="vote"/>
             立委請支持
             <span className="slogan-number mx-2">1</span>

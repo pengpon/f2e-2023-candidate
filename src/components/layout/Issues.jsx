@@ -73,7 +73,7 @@ function Issues({title}) {
 
   return (
     <>
-    <section className="section">
+    <section className="section" data-aos="zoom-in" id="issues">
       <h2 className="title">{title[0]}
         <span className="title-en">{title[1]}
         </span>

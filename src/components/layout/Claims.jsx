@@ -18,7 +18,7 @@ function Claims({title}) {
 
   return (
     <>
-    <section className="section claims">
+    <section className="section claims" data-aos="zoom-in" id="claims">
       <h2 className="title">{title[0]}
         <span className="title-en">{title[1]}
         </span>

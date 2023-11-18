@@ -40,13 +40,15 @@ export default function Header() {
             <img src={Logo} alt="logo" className="menu-logo" />
             <ul className="main-menu">
               <li className="menu-item">
-                <Button type="small">
-                  <Icon content="hand-coins"/>
-                  <span>小額捐款</span>
-                </Button>
+                <TextLink href="#donations">
+                  <Button type="small">
+                    <Icon content="hand-coins"/>
+                    <span>小額捐款</span>
+                  </Button>
+                </TextLink>
               </li>
               <li className="menu-item">
-                <TextLink href="#">
+                <TextLink href="#claims">
                   候選主張
                 </TextLink>
               </li>
@@ -89,28 +91,30 @@ export default function Header() {
           </div>
           <ul className="main-menu desktop">
             <li className="menu-item">
+            <TextLink href="#donations">
               <Button type="small">
                 <Icon content="hand-coins"/>
                 <span>小額捐款</span>
               </Button>
+            </TextLink>
             </li>
             <li className="menu-item">
-              <TextLink href="#">
+              <TextLink href="#claims">
                 候選主張
               </TextLink>
             </li>
             <li className="menu-item">
-              <TextLink href="#">
+              <TextLink href="#events">
               最新活動
               </TextLink>
             </li>
             <li className="menu-item">
-              <TextLink href="#">
+              <TextLink href="#issues">
               政策議題
               </TextLink>
             </li>
             <li className="menu-item">
-              <TextLink href="#">
+              <TextLink href="#service">
               服務信箱
               </TextLink>
             </li>

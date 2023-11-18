@@ -47,7 +47,7 @@ function Donations({title, subtitle}) {
 
   return (
     <>
-    <section className="section donations">
+    <section className="section donations" data-aos="zoom-in" id="donations">
       <div className="donations-context">
         <h2 className="title">{title[0]}
           <span className="title-en">{title[1]}

@@ -35,13 +35,13 @@ export default function Footer() {
                   <TextLink href="#">首頁</TextLink>
                 </li>
                 <li className="link-item">
-                  <TextLink href="#">最新活動</TextLink>
+                  <TextLink href="#events">最新活動</TextLink>
                 </li>
                 <li className="link-item">
-                  <TextLink href="#">政策議題</TextLink>
+                  <TextLink href="#issues">政策議題</TextLink>
                 </li>
                 <li className="link-item">
-                  <TextLink href="#">小額捐款</TextLink>
+                  <TextLink href="#donations">小額捐款</TextLink>
                 </li>
               </ul>
             </div>

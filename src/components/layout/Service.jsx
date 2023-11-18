@@ -6,7 +6,7 @@ function Service({title, subtitle, description}) {
 
   return (
     <>
-    <section className="section service">
+    <section className="section service" data-aos="zoom-in" id="service">
       <div className="service-context mb-4">
         <h2 className="title">{title[0]}
           <span className="title-en">{title[1]}

@@ -39,7 +39,7 @@ function Events({title}) {
 
   return (
     <>
-    <section className="section events">
+    <section className="section events" data-aos="zoom-in" id="events">
       <div className="events-title">
         <h2 className="title">{title[0]}
           <span className="title-en">{title[1]}

@@ -6,8 +6,17 @@ import Donations  from '../components/layout/Donations'
 import Events  from '../components/layout/Events'
 import Claims from '../components/layout/Claims'
 import Footer from '../components/layout/Footer'
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home () {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  }, [])
+
   return (
     <>
       <Header/>
