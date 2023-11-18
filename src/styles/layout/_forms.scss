@@ -1,0 +1,10 @@
+// Forms
+.form {
+  border-radius: $border-radius;
+  background-color: map-get($primary, "lime-1");
+  padding: map-get($spacers, 4) map-get($spacers, 3);
+
+  @include media-breakpoint-up(lg) {
+    padding: map-get($spacers, 4) map-get($spacers, 4);
+  }
+}

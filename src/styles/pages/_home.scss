@@ -1,0 +1,11 @@
+// Home
+.container {
+  margin: 0 auto;
+  padding-right: map-get($spacers, 3);
+  padding-left: map-get($spacers, 3);
+
+  @include media-breakpoint-up(lg) {
+    width: 90vw;
+    max-width: 1280px;
+  }
+}

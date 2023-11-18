@@ -1,0 +1,35 @@
+.form {
+  .label {
+    display: inline-block;
+    margin-bottom: map-get($spacers, 2);
+    color: map-get($gray, "gray-5");
+    font-size: map-get($display-font-sizes, 5);
+    font-weight: $font-weight-medium;
+    line-height: $line-height-lg;
+  }
+
+  .input,
+  .textarea {
+    width: 100%;
+    padding: map-get($spacers, 3);
+    border: 2px solid $input-border-color;
+    border-radius: $border-radius-sm;
+    font-size: map-get($display-font-sizes, 6);
+    font-weight: $font-weight-normal;
+    line-height: $line-height-lg;
+    outline: transparent;
+
+    &:hover,
+    &:focus {
+      border-color: $input-border-color-focus;
+    }
+
+    &:active {
+      border-color: $input-border-color-active;
+    }
+
+    &::placeholder {
+      color: map-get($gray, "gray-2");
+    }
+  }
+}

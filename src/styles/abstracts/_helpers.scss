@@ -1,0 +1,77 @@
+// Spacing
+@each $space-unit, $space in $spacers {
+  // margin
+  .mx-#{$space-unit} {
+    margin-right: $space;
+    margin-left: $space;
+  }
+
+  .my-#{$space-unit} {
+    margin-top: $space;
+    margin-bottom: $space;
+  }
+
+  .mt-#{$space-unit} {
+    margin-top: $space;
+  }
+
+  .mr-#{$space-unit} {
+    margin-right: $space;
+  }
+
+  .mb-#{$space-unit} {
+    margin-bottom: $space;
+  }
+
+  .ml-#{$space-unit} {
+    margin-left: $space;
+  }
+
+  // padding
+  .pa-#{$space-unit} {
+    padding: $space;
+  }
+
+  .px-#{$space-unit} {
+    padding-right: $space;
+    padding-left: $space;
+  }
+
+  .py-#{$space-unit} {
+    padding-top: $space;
+    padding-bottom: $space;
+  }
+
+  .pt-#{$space-unit} {
+    padding-top: $space;
+  }
+
+  .pr-#{$space-unit} {
+    padding-right: $space;
+  }
+
+  .pb-#{$space-unit} {
+    padding-bottom: $space;
+  }
+
+  .pl-#{$space-unit} {
+    padding-left: $space;
+  }
+}
+
+// layout
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
