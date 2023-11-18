@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import Button from '../Button'
 import TextLink from '../TextLink'
 import Icon from '../Icon'
-import Logo from '../../assets/logo-dark.svg'
+import Logo from '/logo-dark.svg'
 
 export default function Header() {
   const checkboxRef = useRef(null);
